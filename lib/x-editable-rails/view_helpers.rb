@@ -10,6 +10,7 @@ module X
             model_param = model.gsub('::', '_')
             model_name = model.gsub('::', '/')
             type = options[:type] || "text"
+            empty = options[:empty] || "#{t(:empty)}"
             content_tag :a, href: "#", 
             class: "editable", 
               data: { 
